@@ -59,12 +59,6 @@ The cart supports increasing and decreasing quantities, removing products, and r
 
 ![Nocturne Pen Wireless product detail with cart drawer](screenshots/product-detail-cart.webp)
 
-## What you learned
-
-This iteration reinforced how much perceived quality comes from the connection between visual direction and interaction details. A premium product page needs more than an attractive image: the specification grid, purchase controls, shipping note, and related-product context all help a visitor make a decision.
-
-It also provided practice translating a customer-facing experience rather than translating source-code structure. Keeping the JavaScript and file organization simple while moving every visible touchpoint into English makes the work easier to review across international teams. Finally, the QA pass highlighted the value of small accessibility details such as descriptive labels, live cart counts, focus-visible styling, and predictable Escape-key behavior.
-
 ## Known limitations
 
 This is a static portfolio demonstration rather than a production commerce deployment. Cart state is held in memory and resets on refresh; there is no authentication, inventory service, CMS, order persistence, shipping calculator, tax engine, payment provider, or real checkout. The newsletter form validates the browser email field and displays a local success message but does not send data to a mailing platform.
