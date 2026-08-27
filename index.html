@@ -1,335 +1,37 @@
-<!-- Oficina Noturna Editorial: página estática local com fundo carvão, dourado mineral e fotografia de produto. -->
 <!doctype html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0a0a0a" />
-    <meta
-      name="description"
-      content="Nocturne Atelier — instrumentos selecionados para o gesto."
-    />
+    <meta name="description" content="Nocturne Atelier — considered instruments for the artist's gesture." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
     <link id="favicon" rel="icon" type="image/png" href="" />
     <title>Nocturne Atelier — Art Supply</title>
   </head>
   <body>
     <div class="site-shell">
-      <div class="shipping-strip">FRETE GRÁTIS EM PEDIDOS ACIMA DE US$ 100</div>
-
-      <header class="site-header" id="inicio">
-        <button
-          class="mobile-icon-button"
-          id="open-menu"
-          aria-label="Abrir menu"
-          type="button"
-        >
-          <span class="hamburger" aria-hidden="true"></span>
-        </button>
-
-        <a class="brand" href="#inicio" aria-label="Nocturne Atelier, início">
-          <span
-            class="brand-sigil brand-sigil--placeholder"
-            data-image="logo"
-            data-alt="Símbolo Nocturne Atelier"
-            aria-hidden="true"
-          ></span>
-          <span class="brand-name">Nocturne</span>
-          <span class="brand-subtitle">Atelier Supply</span>
-        </a>
-
-        <nav class="desktop-nav" aria-label="Navegação principal">
-          <a href="#colecoes">Categoria</a>
-          <a href="#catalogo">Produtos</a>
-          <a href="#manifesto">Sobre</a>
-          <a href="#rodape">Contato</a>
-        </nav>
-
-        <div class="header-actions">
-          <a
-            class="search-link desktop-search"
-            href="#catalogo"
-            aria-label="Ir para o catálogo"
-            ><span aria-hidden="true"></span
-          ></a>
-          <button
-            class="cart-button"
-            data-open-cart
-            aria-label="Abrir carrinho, 0 itens"
-            type="button"
-          >
-            <span class="bag-icon" aria-hidden="true"></span>
-            <span class="cart-count" id="cart-count" hidden>0</span>
-          </button>
-        </div>
+      <div class="shipping-strip">FREE SHIPPING ON ORDERS OVER US$ 100</div>
+      <header class="site-header" id="home">
+        <button class="mobile-icon-button" id="open-menu" aria-label="Open menu" type="button"><span class="hamburger" aria-hidden="true"></span></button>
+        <a class="brand" href="#home" aria-label="Nocturne Atelier, home"><span class="brand-sigil brand-sigil--placeholder" data-image="logo" data-alt="Nocturne Atelier sigil" aria-hidden="true"></span><span class="brand-name">Nocturne</span><span class="brand-subtitle">Atelier Supply</span></a>
+        <nav class="desktop-nav" aria-label="Main navigation"><a href="#collections">Collections</a><a href="#catalog">Shop</a><a href="#manifesto">About</a><a href="#footer">Contact</a></nav>
+        <div class="header-actions"><a class="search-link desktop-search" href="#catalog" aria-label="Jump to shop"><span aria-hidden="true"></span></a><button class="cart-button" data-open-cart aria-label="Open cart, 0 items" type="button"><span class="bag-icon" aria-hidden="true"></span><span class="cart-count" id="cart-count" hidden>0</span></button></div>
       </header>
-
       <main>
-        <section class="hero-section" aria-labelledby="hero-title">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">INSTRUMENTOS PARA O GESTO</p>
-            <h1 id="hero-title">
-              Ferramentas que<br />acompanham a<br /><em>sua linha.</em>
-            </h1>
-            <p class="hero-description">
-              Máquinas, pigmentos e precisão de bancada para artistas que
-              constroem cada detalhe.
-            </p>
-            <button class="solid-button" data-scroll="#colecoes" type="button">
-              Ver a seleção <span aria-hidden="true">↘</span>
-            </button>
-          </div>
-          <div class="hero-visual" aria-hidden="true">
-            <span class="hero-image-placeholder" data-image="hero"></span>
-            <div class="hero-index">01 <span>—</span> INSTRUMENTOS</div>
-          </div>
-          <div class="hero-line"></div>
-        </section>
-
-        <section class="reassurance-strip" aria-label="Diferenciais da seleção">
-          <div class="reassurance-item">
-            <span
-              class="feature-icon feature-icon--box"
-              aria-hidden="true"
-            ></span
-            ><span
-              ><strong>Curadoria de ateliê</strong>Materiais escolhidos pelo
-              gesto</span
-            >
-          </div>
-          <div class="reassurance-item">
-            <span
-              class="feature-icon feature-icon--shield"
-              aria-hidden="true"
-            ></span
-            ><span
-              ><strong>Precisão profissional</strong>Desempenho sem ruído</span
-            >
-          </div>
-          <div class="reassurance-item">
-            <span
-              class="feature-icon feature-icon--truck"
-              aria-hidden="true"
-            ></span
-            ><span><strong>Envio cuidadoso</strong>Pronto para a bancada</span>
-          </div>
-        </section>
-
-        <section
-          class="collections-section"
-          id="colecoes"
-          aria-labelledby="collections-title"
-        >
-          <div class="section-heading reveal">
-            <div>
-              <p class="eyebrow">A SELEÇÃO DO ATELIÊ</p>
-              <h2 id="collections-title">
-                Para cada<br /><em>etapa da obra.</em>
-              </h2>
-            </div>
-            <p>
-              Três famílias de instrumentos, escolhidas para dar continuidade ao
-              seu processo — da primeira marca à última camada.
-            </p>
-          </div>
-
-          <div class="collection-rail">
-            <a class="collection-card collection-card--1" href="#catalogo">
-              <span
-                class="collection-card-media collection-card-media--placeholder"
-                data-image="collections.machines"
-                data-alt="Coleção de máquinas de tatuagem."
-              ></span>
-              <span class="collection-overlay" aria-hidden="true"></span>
-              <span class="collection-info"
-                ><span class="collection-number">01</span
-                ><strong>Máquinas</strong
-                ><span>Equilíbrio para cada traço.</span
-                ><span class="collection-link"
-                  >Explorar <b aria-hidden="true">→</b></span
-                ></span
-              >
-            </a>
-            <a class="collection-card collection-card--2" href="#catalogo">
-              <span
-                class="collection-card-media collection-card-media--placeholder"
-                data-image="collections.pigments"
-                data-alt="Coleção de pigmentos de tatuagem."
-              ></span>
-              <span class="collection-overlay" aria-hidden="true"></span>
-              <span class="collection-info"
-                ><span class="collection-number">02</span
-                ><strong>Pigmentos</strong
-                ><span>Cor construída em camadas.</span
-                ><span class="collection-link"
-                  >Explorar <b aria-hidden="true">→</b></span
-                ></span
-              >
-            </a>
-            <a class="collection-card collection-card--3" href="#catalogo">
-              <span
-                class="collection-card-media collection-card-media--placeholder"
-                data-image="collections.cartridges"
-                data-alt="Coleção de cartuchos técnicos."
-              ></span>
-              <span class="collection-overlay" aria-hidden="true"></span>
-              <span class="collection-info"
-                ><span class="collection-number">03</span
-                ><strong>Cartuchos</strong><span>Precisão que se repete.</span
-                ><span class="collection-link"
-                  >Explorar <b aria-hidden="true">→</b></span
-                ></span
-              >
-            </a>
-          </div>
-        </section>
-
-        <section
-          class="catalog-section"
-          id="catalogo"
-          aria-labelledby="catalog-title"
-        >
-          <div class="catalog-heading">
-            <p class="eyebrow" id="catalog-title">CHEGADAS RECENTES</p>
-            <a href="#rodape">Ver catálogo <span aria-hidden="true">›</span></a>
-          </div>
-          <div class="product-grid" id="product-grid"></div>
-        </section>
-
-        <section
-          class="manifesto-section"
-          id="manifesto"
-          aria-labelledby="manifesto-title"
-        >
-          <div class="manifesto-symbol" aria-hidden="true">
-            <span class="manifesto-symbol-placeholder" data-image="logo"></span>
-          </div>
-          <p class="eyebrow">O RITUAL DA PRECISÃO</p>
-          <h2 id="manifesto-title">
-            O melhor instrumento<br />não interrompe a ideia.
-          </h2>
-          <a href="#rodape" class="text-link"
-            >Conhecer o ateliê <span aria-hidden="true">→</span></a
-          >
-        </section>
+        <section class="hero-section" aria-labelledby="hero-title"><div class="hero-copy reveal"><p class="eyebrow">TOOLS FOR THE GESTURE</p><h1 id="hero-title">Tools that<br />follow your<br /><em>line.</em></h1><p class="hero-description">Machines, pigments, and bench precision for artists who build every detail.</p><button class="solid-button" data-scroll="#collections" type="button">View the selection <span aria-hidden="true">↘</span></button></div><div class="hero-visual" aria-hidden="true"><span class="hero-image-placeholder" data-image="hero"></span><div class="hero-index">01 <span>—</span> INSTRUMENTS</div></div><div class="hero-line"></div></section>
+        <section class="reassurance-strip" aria-label="Why shop Nocturne"><div class="reassurance-item"><span class="feature-icon feature-icon--box" aria-hidden="true"></span><span><strong>Atelier curation</strong>Materials chosen for the gesture</span></div><div class="reassurance-item"><span class="feature-icon feature-icon--shield" aria-hidden="true"></span><span><strong>Professional precision</strong>Performance without the noise</span></div><div class="reassurance-item"><span class="feature-icon feature-icon--truck" aria-hidden="true"></span><span><strong>Careful dispatch</strong>Ready for your bench</span></div></section>
+        <section class="collections-section" id="collections" aria-labelledby="collections-title"><div class="section-heading reveal"><div><p class="eyebrow">THE ATELIER SELECTION</p><h2 id="collections-title">For every<br /><em>stage of the work.</em></h2></div><p>Three families of instruments, selected to carry your process from the first mark to the final layer.</p></div><div class="collection-rail"><a class="collection-card collection-card--1" href="#catalog"><span class="collection-card-media collection-card-media--placeholder" data-image="collections.machines" data-alt="Tattoo machine collection"></span><span class="collection-overlay" aria-hidden="true"></span><span class="collection-info"><span class="collection-number">01</span><strong>Machines</strong><span>Balance for every line.</span><span class="collection-link">Explore <b aria-hidden="true">→</b></span></span></a><a class="collection-card collection-card--2" href="#catalog"><span class="collection-card-media collection-card-media--placeholder" data-image="collections.pigments" data-alt="Tattoo pigment collection"></span><span class="collection-overlay" aria-hidden="true"></span><span class="collection-info"><span class="collection-number">02</span><strong>Pigments</strong><span>Colour built in layers.</span><span class="collection-link">Explore <b aria-hidden="true">→</b></span></span></a><a class="collection-card collection-card--3" href="#catalog"><span class="collection-card-media collection-card-media--placeholder" data-image="collections.cartridges" data-alt="Technical cartridge collection"></span><span class="collection-overlay" aria-hidden="true"></span><span class="collection-info"><span class="collection-number">03</span><strong>Cartridges</strong><span>Precision you can repeat.</span><span class="collection-link">Explore <b aria-hidden="true">→</b></span></span></a></div></section>
+        <section class="catalog-section" id="catalog" aria-labelledby="catalog-title"><div class="catalog-heading"><p class="eyebrow" id="catalog-title">RECENT ARRIVALS</p><a href="#footer">View all products <span aria-hidden="true">›</span></a></div><div class="product-grid" id="product-grid"></div></section>
+        <section class="product-detail-section" id="product-detail" aria-labelledby="product-detail-title"><div class="product-detail-media"><span class="product-detail-image" data-image="products.pen" data-alt="Nocturne Pen Wireless tattoo machine"></span><span class="product-detail-index">FEATURED / 01</span></div><div class="product-detail-copy"><p class="eyebrow">THE NOCTURNE INSTRUMENTS</p><p class="product-detail-kicker">WIRELESS PEN / 3.5 MM STROKE</p><h2 id="product-detail-title">Nocturne Pen<br /><em>Wireless</em></h2><div class="product-detail-price">US$ 199.00</div><p class="product-detail-description">A quiet, balanced wireless pen designed for long sessions and deliberate lines. The anodised body sits naturally in the hand, while the 3.5 mm stroke gives artists a versatile foundation for lining, shading, and packing colour.</p><div class="product-specs"><div><span>Stroke</span><strong>3.5 mm</strong></div><div><span>Runtime</span><strong>8 hours</strong></div><div><span>Weight</span><strong>214 g</strong></div><div><span>Finish</span><strong>Black anodised</strong></div></div><div class="product-purchase"><label for="detail-quantity">Quantity</label><div class="detail-controls"><button type="button" data-detail-quantity="decrease" aria-label="Decrease quantity">−</button><input id="detail-quantity" type="number" min="1" value="1" aria-label="Product quantity" /><button type="button" data-detail-quantity="increase" aria-label="Increase quantity">+</button></div><button class="solid-button detail-add-button" type="button" data-add="pen">Add to cart <span aria-hidden="true">→</span></button></div><p class="product-note">Ships in protective atelier packaging. Duties and taxes calculated at checkout.</p></div></section>
+        <section class="related-section" aria-labelledby="related-title"><div class="catalog-heading"><p class="eyebrow" id="related-title">COMPLETE THE SET</p><a href="#catalog">Shop the collection <span aria-hidden="true">›</span></a></div><div class="related-grid" id="related-grid"></div></section>
+        <section class="manifesto-section" id="manifesto" aria-labelledby="manifesto-title"><div class="manifesto-symbol" aria-hidden="true"><span class="manifesto-symbol-placeholder" data-image="logo"></span></div><p class="eyebrow">THE RITUAL OF PRECISION</p><h2 id="manifesto-title">The best instrument<br />never interrupts the idea.</h2><a href="#footer" class="text-link">Meet the atelier <span aria-hidden="true">→</span></a></section>
       </main>
-
-      <footer class="site-footer" id="rodape">
-        <div class="footer-brand">
-          <a class="brand" href="#inicio">
-            <span
-              class="brand-sigil brand-sigil--placeholder"
-              data-image="logo"
-              data-alt="Símbolo Nocturne Atelier"
-              aria-hidden="true"
-            ></span>
-            <span class="brand-name">Nocturne</span>
-            <span class="brand-subtitle">Atelier Supply</span>
-          </a>
-          <p>
-            Instrumentos selecionados para artistas que conhecem o próprio
-            gesto.
-          </p>
-        </div>
-
-        <div class="footer-links">
-          <div>
-            <span>SELEÇÃO</span><a href="#catalogo">Máquinas</a
-            ><a href="#catalogo">Pigmentos</a><a href="#catalogo">Cartuchos</a>
-          </div>
-          <div>
-            <span>ATELIÊ</span><a href="#manifesto">Nossa história</a
-            ><a href="#rodape">Jornal</a
-            ><a href="mailto:ola@nocturneatelier.com">Contato</a>
-          </div>
-        </div>
-
-        <div class="newsletter">
-          <p class="eyebrow">CORRESPONDÊNCIA RARA</p>
-          <p>Novos instrumentos, sem ruído.</p>
-          <form id="newsletter-form">
-            <label class="sr-only" for="newsletter-email"
-              >Seu melhor e-mail</label
-            ><input
-              id="newsletter-email"
-              type="email"
-              required
-              placeholder="seu@email.com"
-            /><button aria-label="Cadastrar e-mail" type="submit">→</button>
-          </form>
-          <p class="form-status" id="form-status" aria-live="polite"></p>
-        </div>
-        <div class="copyright">
-          © 2026 NOCTURNE ATELIER. CONCEITO VISUAL PARA APRESENTAÇÃO.
-        </div>
-      </footer>
+      <footer class="site-footer" id="footer"><div class="footer-brand"><a class="brand" href="#home"><span class="brand-sigil brand-sigil--placeholder" data-image="logo" data-alt="Nocturne Atelier sigil" aria-hidden="true"></span><span class="brand-name">Nocturne</span><span class="brand-subtitle">Atelier Supply</span></a><p>Considered instruments for artists who know their own gesture.</p></div><div class="footer-links"><div><span>SELECTION</span><a href="#catalog">Machines</a><a href="#catalog">Pigments</a><a href="#catalog">Cartridges</a></div><div><span>ATELIER</span><a href="#manifesto">Our story</a><a href="#footer">Journal</a><a href="mailto:hello@nocturneatelier.com">Contact</a></div></div><div class="newsletter"><p class="eyebrow">RARE CORRESPONDENCE</p><p>New instruments, without the noise.</p><form id="newsletter-form"><label class="sr-only" for="newsletter-email">Your email address</label><input id="newsletter-email" type="email" required placeholder="you@email.com" /><button aria-label="Subscribe to newsletter" type="submit">→</button></form><p class="form-status" id="form-status" aria-live="polite"></p></div><div class="copyright">© 2026 NOCTURNE ATELIER. VISUAL CONCEPT FOR PRESENTATION.</div></footer>
     </div>
-
-    <div class="drawer-scrim" id="drawer-scrim" aria-hidden="true"></div>
-    <aside
-      class="cart-drawer"
-      id="cart-drawer"
-      aria-label="Carrinho"
-      aria-hidden="true"
-    >
-      <header class="drawer-header">
-        <div>
-          <p class="eyebrow">SELEÇÃO ATUAL</p>
-          <h2>Seu carrinho <span id="drawer-count">(0)</span></h2>
-        </div>
-        <button
-          class="close-drawer"
-          data-close-drawers
-          type="button"
-          aria-label="Fechar carrinho"
-        >
-          ×
-        </button>
-      </header>
-      <div class="cart-content" id="cart-content"></div>
-    </aside>
-
-    <aside
-      class="mobile-menu"
-      id="mobile-menu"
-      aria-label="Menu móvel"
-      aria-hidden="true"
-    >
-      <div class="menu-drawer-top">
-        <a class="brand" href="#inicio" data-close-drawers
-          ><span
-            class="brand-sigil brand-sigil--placeholder"
-            data-image="logo"
-            data-alt="Símbolo Nocturne Atelier"
-            aria-hidden="true"
-          ></span
-          ><span class="brand-name">Nocturne</span
-          ><span class="brand-subtitle">Atelier Supply</span></a
-        ><button
-          class="close-drawer"
-          data-close-drawers
-          type="button"
-          aria-label="Fechar menu"
-        >
-          ×
-        </button>
-      </div>
-      <nav>
-        <a href="#colecoes" data-close-drawers>Seleção <span>→</span></a
-        ><a href="#catalogo" data-close-drawers>Instrumentos <span>→</span></a
-        ><a href="#manifesto" data-close-drawers>Manifesto <span>→</span></a
-        ><a href="#rodape" data-close-drawers>Contato <span>→</span></a>
-      </nav>
-    </aside>
-
-    <div class="toast" id="toast" role="status" aria-live="polite"></div>
-    <script src="js/images.js"></script>
-    <script src="js/app.js"></script>
+    <div class="drawer-scrim" id="drawer-scrim" aria-hidden="true"></div><aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart" aria-hidden="true"><header class="drawer-header"><div><p class="eyebrow">CURRENT SELECTION</p><h2>Your cart <span id="drawer-count">(0)</span></h2></div><button class="close-drawer" data-close-drawers type="button" aria-label="Close cart">×</button></header><div class="cart-content" id="cart-content"></div></aside><aside class="mobile-menu" id="mobile-menu" aria-label="Mobile menu" aria-hidden="true"><div class="menu-drawer-top"><a class="brand" href="#home" data-close-drawers><span class="brand-sigil brand-sigil--placeholder" data-image="logo" data-alt="Nocturne Atelier sigil" aria-hidden="true"></span><span class="brand-name">Nocturne</span><span class="brand-subtitle">Atelier Supply</span></a><button class="close-drawer" data-close-drawers type="button" aria-label="Close menu">×</button></div><nav><a href="#collections" data-close-drawers>Selection <span>→</span></a><a href="#catalog" data-close-drawers>Instruments <span>→</span></a><a href="#manifesto" data-close-drawers>Manifesto <span>→</span></a><a href="#footer" data-close-drawers>Contact <span>→</span></a></nav></aside><div class="toast" id="toast" role="status" aria-live="polite"></div><script src="js/images.js"></script><script src="js/app.js"></script>
   </body>
 </html>
