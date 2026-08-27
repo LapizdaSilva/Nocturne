@@ -1,102 +1,261 @@
 # Nocturne Atelier
 
-Nocturne Atelier is a dark, editorial e-commerce storefront for tattoo and art-supply instruments. The interface is intentionally presented in English to demonstrate readiness for international clients and teams while keeping the implementation lightweight, dependency-free, and easy to review.
+Nocturne Atelier is a dark, editorial e-commerce storefront concept for tattoo and art-supply instruments.
 
-> **Portfolio note:** This project is a front-end commerce demonstration. It models the key storefront and cart interactions without processing real payments or connecting to a commerce backend.
+The project was created as a front-end commerce demonstration, with a focus on responsive design, product presentation, customer interactions, accessibility, and quality assurance. The storefront is intentionally lightweight and dependency-free, making it easy to review and run locally.
 
-## Project objective
+> **Portfolio note:** This is a front-end e-commerce prototype. It models storefront and cart interactions without processing real payments or connecting to a production commerce backend.
 
-The objective is to create a refined storefront that makes professional tattoo tools feel considered, tactile, and easy to evaluate. The experience combines an art-directed landing page with a practical product detail flow, accessible cart drawer, product merchandising, and newsletter capture.
+## Project Objective
 
-The latest iteration specifically strengthens the project as an international portfolio piece by translating all customer-facing copy to English, adding a complete featured product page for the **Nocturne Pen Wireless**, and documenting a deliberate quality-assurance process.
+The goal was to create a premium e-commerce experience for professional tattoo artists and creative practitioners, combining an art-directed visual identity with practical shopping interactions.
 
-## Target audience
+The project was developed with an emphasis on:
 
-The storefront is designed for professional tattoo artists, apprentices building a reliable kit, and creative practitioners who value precision, material quality, and a calm purchasing experience. The visual language also targets independent ateliers and design-conscious e-commerce brands looking for a premium, editorial presentation.
+* Clear product presentation
+* Responsive desktop and mobile experiences
+* Intuitive e-commerce interactions
+* Accessible navigation and controls
+* Consistent product merchandising
+* Quality assurance and documentation
+* International, English-language customer-facing content
+
+## Target Audience
+
+The storefront is designed for:
+
+* Professional tattoo artists
+* Tattoo apprentices building their equipment
+* Creative practitioners
+* Independent tattoo studios and ateliers
+* Design-conscious customers looking for premium tools
 
 ## Features
 
-| Area | Included experience |
-| --- | --- |
-| Storefront | Editorial hero, collection rail, recent-arrival product grid, manifesto, and footer navigation |
-| Product detail | Product image, price, long-form description, specifications, quantity selector, add-to-cart action, shipping note, and related products |
-| Cart | Slide-in cart drawer, item thumbnails, subtotal, quantity increase/decrease, remove action, empty state, and demo checkout CTA |
-| Navigation | Desktop navigation, mobile menu drawer, anchor-based section navigation, visible focus states, and Escape-to-close behavior |
-| Merchandising | Consistent product cards, quick-add controls, related-products section, hover states, and responsive content hierarchy |
-| Communication | Client-side newsletter validation with live success feedback and no page reload |
-| Accessibility | Semantic landmarks, labelled controls, descriptive image alt text, live regions for cart counts/status, and keyboard-friendly drawers |
+| Area              | Included Experience                                                                                                                      |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Storefront        | Editorial hero, collections, product grid, manifesto, and footer navigation                                                              |
+| Product Detail    | Product imagery, pricing, description, specifications, quantity selector, add-to-cart action, shipping information, and related products |
+| Cart              | Slide-in cart drawer, product thumbnails, subtotal, quantity controls, item removal, empty state, and demo checkout CTA                  |
+| Navigation        | Desktop navigation, mobile menu drawer, section anchors, visible focus states, and Escape-to-close behavior                              |
+| Merchandising     | Product cards, quick-add controls, related products, hover states, and responsive content hierarchy                                      |
+| Communication     | Client-side newsletter validation with live success feedback                                                                             |
+| Accessibility     | Semantic landmarks, labelled controls, descriptive image alt text, live cart status, focus-visible states, and keyboard-friendly drawers |
+| Responsive Design | Desktop and mobile layouts with dedicated interaction patterns for smaller screens                                                       |
 
-## Tech stack
+## Tech Stack
 
-| Technology | Role |
-| --- | --- |
-| HTML5 | Semantic storefront structure and accessible form controls |
-| CSS3 | Design tokens, editorial layout, product art direction, motion, and responsive breakpoints |
-| Vanilla JavaScript | Product data, rendering, cart state, quantity logic, drawers, toast feedback, and newsletter behavior |
-| Google Fonts | Cormorant Garamond for display typography and DM Sans for interface copy |
-| Local image assets | Hero, collections, product photography, and Nocturne sigil |
-| GitHub Pages-friendly structure | Static `index.html`, `css/`, `js/`, and `assets/` folders with no build step |
+| Technology                      | Role                                                                                                 |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| HTML5                           | Semantic storefront structure and accessible form controls                                           |
+| CSS3                            | Layout, responsive design, design tokens, typography, animations, and visual styling                 |
+| Vanilla JavaScript              | Product data, rendering, cart state, quantity logic, drawers, notifications, and newsletter behavior |
+| Google Fonts                    | Cormorant Garamond and DM Sans                                                                       |
+| Local Assets                    | Product photography, collection imagery, hero imagery, and branding                                  |
+| GitHub Pages-friendly structure | Static files with no build step or package installation                                              |
 
-## Responsive behavior
+## Responsive Behavior
 
-The layout is mobile-first in its interaction decisions and uses a compact breakpoint at `760px`. On desktop, the header exposes the full navigation and the hero/product sections use asymmetric multi-column compositions. On smaller screens, the navigation becomes a slide-in menu, the hero stacks into a readable vertical flow, collection cards become a single-column rail, and the featured product purchase controls expand to full width.
+The storefront is designed to work across desktop and mobile viewport sizes.
 
-Images use fluid sizing and `object-fit` cropping so the visual system remains legible without distorting product photography. Touch targets remain explicit buttons, the cart drawer is constrained to the viewport width, and `prefers-reduced-motion` rules in the stylesheet reduce non-essential transitions for users who request less motion.
+At smaller breakpoints:
 
-## E-commerce functionality
+* Desktop navigation becomes a mobile slide-in menu
+* Multi-column sections adapt to a vertical layout
+* Product information becomes easier to scan on smaller screens
+* Purchase controls expand to available width
+* Related products transition to a single-column layout
+* Touch-friendly controls remain available for interactive elements
+* Non-essential animations are reduced when `prefers-reduced-motion` is enabled
 
-The catalog is represented by a small product data array in `js/app.js`, which keeps product cards and cart items consistent. The featured **Nocturne Pen Wireless** page accepts a quantity, adds that quantity to the cart, and opens the cart drawer with updated item counts and subtotal calculations.
+The project uses fluid sizing and responsive image behavior to maintain the visual hierarchy without distorting product photography.
 
-The cart supports increasing and decreasing quantities, removing products, and returning to an empty state. A checkout button intentionally displays a local-demo message rather than attempting a payment flow. This keeps the repository safe to run as a portfolio project while making the production integration point explicit.
+## E-commerce Workflow
 
-## Screenshots
+The storefront models a simplified customer journey:
 
-### Desktop storefront
+```text
+Homepage
+   ↓
+Collection / Product Discovery
+   ↓
+Product Detail
+   ↓
+Quantity Selection
+   ↓
+Add to Cart
+   ↓
+Cart Review
+   ↓
+Demo Checkout
+```
 
-![Nocturne Atelier desktop storefront](screenshots/home-desktop.webp)
+Product information is represented through a centralized JavaScript data structure so that product cards, product details, and cart items remain consistent.
 
-### Product detail and cart drawer
+The cart supports:
 
-![Nocturne Pen Wireless product detail with cart drawer](screenshots/product-detail-cart.webp)
+* Adding products
+* Increasing and decreasing quantities
+* Removing products
+* Calculating subtotals
+* Empty-cart recovery
+* Visual cart count updates
 
-## Known limitations
+The checkout intentionally stops at a local demo state rather than attempting to process real payments.
 
-This is a static portfolio demonstration rather than a production commerce deployment. Cart state is held in memory and resets on refresh; there is no authentication, inventory service, CMS, order persistence, shipping calculator, tax engine, payment provider, or real checkout. The newsletter form validates the browser email field and displays a local success message but does not send data to a mailing platform.
+## Shopify Relevance
 
-Product cards currently link to the featured product section so the demonstration has one complete detail experience. A production version would add individual routes, persistent cart storage, real product data, analytics, server-side validation, and a commerce platform such as Shopify.
+Nocturne is currently implemented as a static front-end prototype rather than a Shopify theme.
 
-## QA checklist
+However, the project was structured around common e-commerce concepts that can be translated into a commerce platform such as Shopify:
 
-The following checklist records the verification pass completed for this portfolio build. Browser interaction was verified against the local static server; responsive behavior was additionally reviewed against the mobile breakpoint rules in `css/styles.css`.
+* Products
+* Collections
+* Product merchandising
+* Product detail pages
+* Cart interactions
+* Responsive storefront layouts
+* Navigation
+* Customer-facing content
+* Checkout flow
 
-| Check | Status | Verification notes |
-| --- | --- | --- |
-| Desktop layout | [x] Verified | Hero, collections, catalog, product detail, related products, manifesto, and footer render in the desktop browser view. |
-| Mobile layout rules | [x] Verified | The `760px` breakpoint switches to the mobile menu, stacked product detail, full-width CTA, and single-column related products. |
-| Navigation | [x] Verified | Header, collection links, footer links, and mobile menu use working section anchors. |
-| Product rendering | [x] Verified | Four catalog products and three related products render with the supplied image assets and English metadata. |
-| Featured product detail | [x] Verified | Image, price, description, specifications, quantity selector, add-to-cart CTA, and shipping note are present. |
-| Add to cart functionality | [x] Verified | Adding the pen opens the drawer, increments the badge, and displays the selected product. |
-| Quantity increase/decrease | [x] Verified | Cart controls update quantity and subtotal; the detail quantity control prevents values below one. |
-| Remove product | [x] Verified | Removing the final line item returns the drawer to its empty state. |
-| Empty cart state | [x] Verified | Empty message and “Explore the selection” recovery action are rendered when the cart has no items. |
-| Newsletter validation | [x] Verified | The required email input uses native browser validation and successful submission updates the live status message. |
-| Escape key behavior for drawers | [x] Verified | Pressing Escape closes both the cart and mobile menu drawers. |
-| Accessibility labels | [x] Verified | Cart, menu, quantity, remove, newsletter, and image controls expose descriptive labels or alt text. |
-| JavaScript syntax | [x] Verified | `node --check js/app.js` completed successfully. |
-| HTML parsing | [x] Verified | The updated `index.html` passed a parser smoke check. |
+A production implementation could migrate the product catalog, theme structure, inventory, cart persistence, analytics, and checkout to Shopify.
 
-## Run locally
+This project therefore represents my existing web development foundation while demonstrating my interest in developing further experience with Shopify and web commerce platforms.
 
-Clone the repository and open the folder with any static server. For example:
+## Project Management Approach
+
+Although Nocturne is a personal project, it was developed using a simplified project workflow rather than treating the website as a single coding task.
+
+The work was organized around:
+
+1. Defining the storefront objective and target audience
+2. Establishing the visual direction
+3. Building the core storefront
+4. Adding e-commerce interactions
+5. Developing the product detail experience
+6. Adapting the experience for mobile
+7. Translating customer-facing content to English
+8. Performing a QA pass
+9. Documenting limitations and future improvements
+
+The repository history also reflects incremental feature development and revisions rather than a single final submission.
+
+## QA Checklist
+
+The following checklist records the verification pass performed for the current portfolio build.
+
+| Check                 | Status | Verification                                                         |
+| --------------------- | ------ | -------------------------------------------------------------------- |
+| Desktop layout        | [x]    | Main storefront sections reviewed in desktop browser view            |
+| Mobile layout         | [x]    | Responsive behavior reviewed against the mobile breakpoint           |
+| Navigation            | [x]    | Header, section anchors, footer links, and mobile menu checked       |
+| Product rendering     | [x]    | Product cards and related products checked                           |
+| Product detail        | [x]    | Image, price, description, specifications, quantity, and CTA checked |
+| Add to cart           | [x]    | Product addition and cart badge update checked                       |
+| Quantity controls     | [x]    | Increase/decrease behavior and subtotal calculations checked         |
+| Remove product        | [x]    | Removing items returns the cart to the appropriate state             |
+| Empty cart            | [x]    | Empty state and recovery action checked                              |
+| Newsletter validation | [x]    | Required email validation and success feedback checked               |
+| Escape key behavior   | [x]    | Cart and mobile menu drawers close with Escape                       |
+| Accessibility labels  | [x]    | Interactive controls and image descriptions reviewed                 |
+| JavaScript syntax     | [x]    | `node --check js/app.js` completed successfully                      |
+| HTML parsing          | [x]    | Updated HTML passed a parser smoke check                             |
+
+## Future Roadmap
+
+### Phase 1 — Completed
+
+* [x] Responsive storefront
+* [x] Product catalog
+* [x] Collection presentation
+* [x] Product detail page
+* [x] Cart functionality
+* [x] Mobile navigation
+* [x] English localization
+* [x] Accessibility improvements
+* [x] QA checklist
+
+### Phase 2 — Planned
+
+* [ ] Product search
+* [ ] Product filtering
+* [ ] Individual product routes
+* [ ] Persistent cart state
+* [ ] Improved form handling
+* [ ] Analytics event tracking
+* [ ] Expanded product catalog
+
+### Phase 3 — Production Commerce
+
+* [ ] Shopify integration
+* [ ] Real product and inventory data
+* [ ] Customer accounts
+* [ ] Persistent orders
+* [ ] Shipping and tax calculation
+* [ ] Payment provider
+* [ ] Production checkout
+* [ ] E-commerce analytics
+
+## Known Limitations
+
+Nocturne is a portfolio prototype rather than a production commerce deployment.
+
+It currently does not include:
+
+* User authentication
+* Persistent cart storage
+* Real inventory management
+* CMS integration
+* Order persistence
+* Shipping calculation
+* Tax calculation
+* Payment processing
+* Production checkout
+* External newsletter service
+
+The newsletter form currently performs client-side validation and displays a local success message without sending data to an external mailing platform.
+
+Product cards currently lead to the featured product experience. A production implementation would provide individual product routes and connect the storefront to a commerce backend.
+
+## What I Learned
+
+This project reinforced how closely visual design and functional e-commerce experiences are connected.
+
+A premium storefront needs more than an attractive visual identity. Product specifications, purchase controls, shipping information, related products, navigation, and responsive behavior all contribute to the customer's ability to understand and evaluate a product.
+
+The project also provided practical experience with:
+
+* Designing around an e-commerce customer journey
+* Translating a customer-facing experience into English
+* Responsive web interaction patterns
+* Accessibility considerations
+* QA planning and verification
+* Documenting technical limitations
+* Thinking about how a static prototype could evolve into a production commerce platform
+
+## Run Locally
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/LapizdaSilva/Nocturne.git
 cd Nocturne
+```
+
+Start a local static server:
+
+```bash
 python3 -m http.server 4173
 ```
 
-Then visit `http://localhost:4173` in a browser. No package installation or build step is required.
+Then open:
+
+```text
+http://localhost:4173
+```
+
+No package installation or build step is required.
 
 ## License
 
