@@ -241,7 +241,7 @@ The project also provided practical experience with:
 Clone the repository:
 
 ```bash
-git clone https://github.com/LapizdaSilva/Nocturne.git
+git clone https://github.com/gabriellsdev/Nocturne.git
 cd Nocturne
 ```
 
