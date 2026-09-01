@@ -214,6 +214,8 @@ It currently does not include:
 * Production checkout
 * External newsletter service
 
+I deliberately kept this dependency-free because this project is demonstrating storefront architecture rather than framework usage.
+
 The newsletter form currently performs client-side validation and displays a local success message without sending data to an external mailing platform.
 
 Product cards currently lead to the featured product experience. A production implementation would provide individual product routes and connect the storefront to a commerce backend.
